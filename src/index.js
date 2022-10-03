@@ -212,19 +212,6 @@ function applyTss(rootElement) {
 // TODO: Apply styles on every rerender
 const renderWithTss = (rootElement) => root.render(applyTss(rootElement));
 
-class TssWrapper extends React.Component {
-  UNSAFE_componentWillUpdate() {
-    const { children } = this.props;
-
-  }
-
-  render() {
-    const { children } = this.props;
-
-    return React.createElement(React.Fragment, null, children);
-  }
-}
-
 const $root = document.getElementById("root");
 if (!$root) {
   throw new Error(`Failed to find $root`);
