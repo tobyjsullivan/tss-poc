@@ -1,0 +1,23 @@
+{
+  "name": "tss-poc",
+  "version": "1.0.0",
+  "description": "Proof-of-Concept for Component-level stylesheets",
+  "author": "Toby Sullivan <tobyjsullivan@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "compile": "webpack",
+    "compile:watch": "webpack watch",
+    "clean": "webpack --clean",
+    "start": "serve ./public"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "serve": "14.0.1",
+    "webpack": "5.74.0",
+    "webpack-cli": "4.10.0"
+  }
+}
